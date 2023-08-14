@@ -69,6 +69,8 @@ nav a {
 section#inicio h1 {
   margin-bottom: 1px; /* Espacio entre el título y el párrafo */
 }
+
+
   
 .ProyectosCen{
   padding: 20px;
@@ -260,16 +262,28 @@ section#inicio h1 {
   }
   
   .foto-centrada {
+    position: relative;
+    text-align: center; /* Alinea horizontalmente los elementos dentro de .foto-centrada */ 
+    }
+    
+    .foto-centrada img {
+      width: 200px; /* Ajusta el tamaño de la foto */
+      height: auto;
+      border: 2px solid #233237;
+    }
+    
+    .iconos {
     display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Espacio entre el texto y la foto */
-  }
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin-top: 10px; /* Espacio superior para separar la imagen de los iconos */
+    }
   
-  .foto-centrada img {
-    width: 200px; /* Ajusta el tamaño de la foto */
-    height: auto;
-    border: 5px solid #233237;
-  }
+  .iconos img {
+    width: 50px;
+    margin: 0 5px;
+    border: 1px solid #f1ecec; 
+    border-radius:50%;
+    }
 
   button {
     --hover-shadows: 16px 16px 33px #121212,
@@ -317,8 +331,7 @@ section#inicio h1 {
   }
 
   .habilidad-imagen {
-    width: 150px; /* Ajusta el ancho deseado */
-    height: 150px; /* Ajusta la altura deseada */
+    
     margin: 10px; /* Opcional - Puedes ajustar el margen según tus necesidades */
   }
 
