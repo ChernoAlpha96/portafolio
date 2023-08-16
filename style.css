@@ -106,11 +106,12 @@ section#inicio h1 {
   .tituloProyecto {
     padding: 1%;
   }
-
+  
   .card {
     overflow: visible;
-    width: 440px;
+    width: 430px;
     height: 525px;
+    margin-left: 14px; /* Agrega este margen izquierdo */
   }
   
   .content {
