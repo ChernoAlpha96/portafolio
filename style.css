@@ -106,12 +106,19 @@ section#inicio h1 {
   .tituloProyecto {
     padding: 1%;
   }
+
   
+  .tarjetas-container {
+    margin-left: 1%; /* Agrega este margen izquierdo*/ 
+    display: flex; /* Crea un diseño de fila*/
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en una nueva línea si no caben en el ancho*/
+  }
+
   .card {
     overflow: visible;
     width: 430px;
     height: 525px;
-    margin-left: 14px; /* Agrega este margen izquierdo */
+    margin: auto; /* Centra la sección horizontalmente */
   }
   
   .content {
@@ -301,7 +308,7 @@ section#inicio h1 {
   .iconos img {
     width: 50px;
     margin: 0 5px;
-    border: 1px solid #f1ecec; 
+    border: 3px solid #f1ecec; 
     border-radius:50%;
     }
 
@@ -335,10 +342,6 @@ section#inicio h1 {
     transform: scale(0.95);
    }
    
-   .tarjetas-container {
-    display: flex; /* Crea un diseño de fila */
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en una nueva línea si no caben en el ancho */
-  }
 
   /* Estilos para la sección de sobre mí */
   section#Skill {
@@ -351,8 +354,8 @@ section#inicio h1 {
   }
 
   .habilidad-imagen {
+    margin: auto; /* Centra la sección horizontalmente */
     
-    margin: 10px; /* Opcional - Puedes ajustar el margen según tus necesidades */
   }
 
 
