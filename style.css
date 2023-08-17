@@ -25,10 +25,12 @@
   }
   
   nav img {
-    width: 5%;
+    width: 10%;
     height: auto;
     margin-left: 8%;
-    border: 5px solid #18121e;
+    border: 8px solid transparent; /* Define un borde sólido transparente */
+    border-image: linear-gradient(to right, #233237, #18121e); /* Establece el gradiente como imagen del borde */
+    border-image-slice: 1; /* Asegura que el gradiente cubra todo el borde */
   }
   
   nav ul {
@@ -91,7 +93,7 @@ section#inicio h1 {
 
 
   
-.ProyectosCen{
+.centrado-titulo{
   padding: 20px;
   display: flex;
   flex-direction: column;
