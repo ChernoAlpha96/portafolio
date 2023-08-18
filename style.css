@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     color: #ffffff; /* Cambia el color de la letra aquí */
-    background-image: linear-gradient(#18121e, #233237); /* Agrega el gradiente usando los colores del body y el nav */
+    background-image: linear-gradient( #0c1112,rgba(16, 44, 229, 0.732)); /* Agrega el gradiente usando los colores del body y el nav */
     font-family: 'Source Code Pro', monospace;
   }
   
@@ -28,10 +28,18 @@
     width: 10%;
     height: auto;
     margin-left: 8%;
-    border: 8px solid transparent; /* Define un borde sólido transparente */
-    border-image: linear-gradient(to right, #233237, #18121e); /* Establece el gradiente como imagen del borde */
-    border-image-slice: 1; /* Asegura que el gradiente cubra todo el borde */
+    border: 8px solid transparent;
+    background: linear-gradient(#233237, #18121e) padding-box,
+      linear-gradient(to top, rgba(20, 145, 195, 0.863), #fbfaf9, rgb(47, 69, 209) ) border-box;
+    border-radius: 50px;  
   }
+  
+  .logo-info-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
   
   nav ul {
     list-style: none;
@@ -60,13 +68,6 @@
   .info span {
     font-size: 12px;
     margin: 3px 0;
-  }
-  
-  /* Nueva clase para ajustar el espacio entre el logo y la información */
-  .logo-info-container {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Ajusta este valor para controlar la distancia */
   }
    
   /* Estilos para la sección de inicio */
