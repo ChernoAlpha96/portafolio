@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     color: #ffffff; /* Cambia el color de la letra aquí */
-    background-image: linear-gradient( #0c1112,rgba(16, 44, 229, 0.732)); /* Agrega el gradiente usando los colores del body y el nav */
+    background-image: linear-gradient( #000000,rgba(16, 44, 229, 0.732),#000000); /* Agrega el gradiente usando los colores del body y el nav */
     font-family: 'Source Code Pro', monospace;
   }
   
@@ -20,7 +20,7 @@
   nav {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(#233237, #18121e);
+    background-image: linear-gradient( #0c1112, rgba(16, 44, 229, 0.732),#0c1112);
     padding: 8px;
   }
   
@@ -28,7 +28,7 @@
     width: 10%;
     height: auto;
     margin-left: 8%;
-    border: 8px solid transparent;
+    border: 5px solid transparent;
     background: linear-gradient(#233237, #18121e) padding-box,
       linear-gradient(to top, rgba(20, 145, 195, 0.863), #fbfaf9, rgb(47, 69, 209) ) border-box;
     border-radius: 50px;  
@@ -67,12 +67,11 @@
   
   .info span {
     font-size: 12px;
-    margin: 3px 0;
+    margin: 2% 0;
   }
    
   /* Estilos para la sección de inicio */
   section#inicio {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,20 +82,15 @@
     background-image: url("./templates/fondo.jpg"); /* Agrega la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
-    
-    /* Borde con efecto de gradiente */
-    border-width: 5px;
-    border-style: solid;
-    border-image: linear-gradient(to bottom, rgba(20, 145, 195, 0.863), rgb(47, 69, 209)) 1;
     padding: 10px; /* Ajusta el espacio interno */
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 500px;
+    box-shadow: 5px 5px 50px rgba(242, 240, 240, 0.575);
 }
 
 .Bienvenidos {
   font-family: 'Source Code Pro', monospace;
   font-size: 300%;
-  margin-bottom: 1px;
+  margin-bottom: 5px;
 }
 
 /* Estilos para el contenido de la sección de inicio */
@@ -113,7 +107,8 @@ section#inicio h3, section#inicio p {
 .foto-centrada img {
   width: 200px;
   height: auto;
-  border: 2px solid #233237;
+  border: 2px solid #8a8c8d;
+  border-radius: 50px;
 }
 
 /* Estilos para los iconos */
@@ -383,6 +378,20 @@ section#inicio h3, section#inicio p {
   /* Estilos para el pie de página */
   footer {
     padding: 10px;
-    background-image: linear-gradient(#233237, #18121e);
+    background-image: linear-gradient( #0c1112, rgba(16, 44, 229, 0.732),#0c1112);
     text-align: center;
+    line-height: 0.2;
+  }
+
+  .iconos2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .iconos2 img {
+    width: 30px;
+    margin: 0 5px;
+    border: 1px solid #f1ecec;
+    border-radius: 50%;
   }
