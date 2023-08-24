@@ -404,6 +404,7 @@ section#inicio h3, section#inicio p {
   align-items: flex-start; /* Alinea los formularios en la parte superior */
   padding: 50px;
   gap: 20px; /* Agrega espacio entre los formularios */
+  flex-wrap: wrap;
   }
   
   .form-container , h3{
@@ -549,8 +550,7 @@ section#inicio h3, section#inicio p {
   }
   
   .form-container .form-submit-btn:hover {
-    background-color: #0b12e5;
-    border-color: #0b12e5;
+    background-color: #ccc;
   }
 
   /* Estilos para el pie de página */
