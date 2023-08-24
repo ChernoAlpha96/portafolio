@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fede Paiva</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -12,9 +14,10 @@
       <div class="logo-info-container">
         <img src="./templates/logoFp.jpg" alt="logoFp">
         <div class="info">
-          <span>Federico Emanuel Paiva</span>
-          <span>Posadas Misiones Arg.</span>
-          <span>28/07/96</span>
+          
+          <span class="info-icon"><i class="material-icons">person</i>Federico Emanuel Paiva</span>
+          <span class="info-icon"><i class="material-icons">location_on</i>Posadas Misiones Arg.</span>
+          <span class="info-icon"><i class="material-icons">cake</i>28/07/96</span>
         </div>
       </div>
       <ul class="navegacion">
@@ -24,13 +27,11 @@
         |
         <li><a href="#Skill">Habilidades</a></li> 
         |
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
       </ul>
     </nav>
-    
-    
-    
-    <!-- Sección de inicio -->
+
+ <!-- Sección de inicio -->
     <section id="inicio" class="inicio-container">
         <h1 class="Bienvenidos">¡Bienvenidos!</h1>
         <h3>Soy Federico Paiva, Programador web  Full Stack Java.</h3>
@@ -296,7 +297,7 @@
 
     <!-- Sección de formulario -->
     <section id="formulario">
-      <h2 class="centrado-titulo">contactarme:</h2>
+      <h2 class="centrado-titulo" id="Contacto">contactarme:</h2>
       <div class="form-container">
         <h3>Formulario para enviarme un Correo:</h3>
         <form class="form">
@@ -348,7 +349,8 @@
         </a>
       </div>
     </footer>
-  
+    
+    <script src="./script.js"></script>
   </body>
   
 </html>
