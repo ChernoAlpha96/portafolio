@@ -296,21 +296,36 @@
 
     <!-- Sección de formulario -->
     <section id="formulario">
-      <h2 class="centrado-titulo" >Formulario para contactarme:</h2>
+      <h2 class="centrado-titulo">contactarme:</h2>
       <div class="form-container">
+        <h3>Formulario para enviarme un Correo:</h3>
         <form class="form">
           <div class="form-group">
-            <label for="email">Nombre:</label>
-            <input type="text" id="email" name="email" required="">
+            <label for="nombreContacto">Nombre:</label>
+            <input type="text" id="nombreContacto" name="nombreContacto" required>
           </div>
           <div class="form-group">
-            <label for="email">Tu Correo:</label>
-            <input type="text" id="email" name="email" required="">
+            <label for="correoContacto">Tu Correo:</label>
+            <input type="email" id="correoContacto" name="correoContacto" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="ejemplo@example.com">
           </div>
           <div class="form-group">
-            <label for="textarea">Mensaje:</label>
-            <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          
-            </textarea>
+            <label for="mensajeContacto">Mensaje:</label>
+            <textarea id="mensajeContacto" name="mensajeContacto" rows="10" cols="50" required></textarea>
+          </div>
+          <button class="form-submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+      
+      <div class="form-container">
+        <h3>Formulario para dejar tu Comentario:</h3>
+        <form class="form">
+          <div class="form-group">
+            <label for="nombreComentario">Nombre:</label>
+            <input type="text" id="nombreComentario" name="nombreComentario" required>
+          </div>
+          <div class="form-group">
+            <label for="mensajeComentario">Comentario:</label>
+            <textarea id="mensajeComentario" name="mensajeComentario" rows="10" cols="50" required></textarea>
           </div>
           <button class="form-submit-btn" type="submit">Submit</button>
         </form>

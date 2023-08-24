@@ -392,18 +392,26 @@ section#inicio h3, section#inicio p {
   /* Estilos adicionales para mejorar la apariencia */
   th {
     background-color: #131212;
-    color: white; /* Agrega color al texto del encabezado */
+    color: #ccc; /* Agrega color al texto del encabezado */
   }
   
 
 
   /* Estilos para la sección de contacto */
   section#formulario {
-    padding: 50px;
+    display: flex; /* Cambia la visualización a flex */
+  justify-content: space-between; /* Distribuye los formularios en el espacio disponible */
+  align-items: flex-start; /* Alinea los formularios en la parte superior */
+  padding: 50px;
+  gap: 20px; /* Agrega espacio entre los formularios */
+  }
+  
+  .form-container , h3{
+    color:#ccc ;
   }
 
   .form-container {
-    width: 400px;
+    width: calc(50% - 10px);
     background: linear-gradient(#212121, #212121) padding-box,
                 linear-gradient(145deg, transparent 35%,#e7e5e8, #151515) border-box;
     border: 2px solid transparent;
@@ -425,7 +433,7 @@ section#inicio h3, section#inicio p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Esto centra horizontalmente el contenedor */
+  text-align: center;
   }
   
   .form-container button:active {
@@ -629,7 +637,14 @@ section#inicio h3, section#inicio p {
     margin: 10px; /* Ajusta el margen entre las imágenes */
   }
 
-  /* Ajusta otros estilos para las imágenes de habilidades */
+  section#formulario {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Centra los formularios verticalmente */
+  }
+
+  .form-container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra los elementos horizontalmente */
+  }
   
-  /* ... (otros ajustes necesarios) ... */
 }
