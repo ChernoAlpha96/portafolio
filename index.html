@@ -296,30 +296,33 @@
     </section>
 
     <!-- Sección de formulario -->
+    <!--formulario envio de corrreo-->
     <section id="formulario">
       <h2 class="centrado-titulo" id="Contacto">contactarme:</h2>
       <div class="form-container">
         <h3>Formulario para enviarme un Correo:</h3>
-        <form class="form">
+        <form class="form" action="https://formsubmit.co/ae81ca274829dac15ec5924235666beb" method="post">
           <div class="form-group">
             <label for="nombreContacto">Nombre:</label>
-            <input type="text" id="nombreContacto" name="nombreContacto" required>
+            <input type="text" id="nombreContacto" name="nombre" required>
           </div>
           <div class="form-group">
             <label for="correoContacto">Tu Correo:</label>
-            <input type="text" id="correoContacto" name="correoContacto" required>
+            <input type="email" id="correoContacto" name="correo" required>
           </div>
           <div class="form-group">
             <label for="mensajeContacto">Mensaje:</label>
-            <textarea id="mensajeContacto" name="mensajeContacto" rows="10" cols="50" required></textarea>
+            <textarea id="mensajeContacto" name="mensaje" rows="10" cols="50" required></textarea>
           </div>
           <button class="form-submit-btn" type="submit">Submit</button>
+          <input type="hidden" name="_next" value="https://chernoalpha96.github.io/portafolio/">
         </form>
       </div>
-      
+      <!---->
+      <!--formulario para Comentario--->
       <div class="form-container">
         <h3>Formulario para dejar tu Comentario:</h3>
-        <form class="form">
+        <form class="form" method="post">
           <div class="form-group">
             <label for="nombreComentario">Nombre:</label>
             <input type="text" id="nombreComentario" name="nombreComentario" required>
