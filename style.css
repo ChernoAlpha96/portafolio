@@ -404,6 +404,7 @@ section#inicio h3, section#inicio p {
     border-collapse: collapse;
     border: 1px solid #ccc;
     margin: 10px;
+    
   }
   
   .tabla-dividida th, .tabla-dividida td {
@@ -421,12 +422,12 @@ section#inicio h3, section#inicio p {
 
   /* Estilos para la sección de formulario */
   section#formulario {
-  display: flex; /* Cambia la visualización a flex */
-  justify-content: space-between; /* Distribuye los formularios en el espacio disponible */
-  align-items: flex-start; /* Alinea los formularios en la parte superior */
-  padding: 38px;
-  gap: 20px; /* Agrega espacio entre los formularios */
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px; /* Espacio entre los formularios */
   }
   
   .form-container , h3{
@@ -490,7 +491,7 @@ section#inicio h3, section#inicio p {
     margin-bottom: 5px;
     color: #717171;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 18px;
   }
   
   .form-container .form-group input {
@@ -558,7 +559,7 @@ section#inicio h3, section#inicio p {
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-family: inherit;
-    color: #717171;
+    color: #ccc;
     font-weight: 600;
     width: 40%;
     background: #313131;
