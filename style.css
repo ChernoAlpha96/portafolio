@@ -407,7 +407,7 @@ section#inicio h3, section#inicio p {
   }
   
   .tabla-dividida th, .tabla-dividida td {
-    padding: 8px;
+    padding: 5px;
     border: 1px solid #ccc; /* Cambia el color del borde a #ccc para mayor visibilidad */
   }
   
@@ -424,7 +424,7 @@ section#inicio h3, section#inicio p {
   display: flex; /* Cambia la visualización a flex */
   justify-content: space-between; /* Distribuye los formularios en el espacio disponible */
   align-items: flex-start; /* Alinea los formularios en la parte superior */
-  padding: 3%;
+  padding: 38px;
   gap: 20px; /* Agrega espacio entre los formularios */
   flex-wrap: wrap;
   }
